@@ -4,44 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <title>116 Portfolio</title>
+    <title>Portfolio</title>
 </head>
 <body>
-
-    <header class="center center-header-sections">
+    <header>
         <div class="logo-container">
-            <a href="#">
-                <h2>Ava Tuttle</h2>
-            </a>
+            <a href="#"><h2>Ava Tuttle</h2></a>
         </div>
-
+    
+        <!-- Hidden Checkbox for Toggle -->
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+    
+        <!-- Hamburger Menu Label (Acts as a Button) -->
+        <label for="menu-toggle" class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </label>
+    
         <nav>
-            <input type="checkbox" id="nav-check">
-            <div class="nav-btn">
-                <label for="nav-check">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
-            </div>
-            <div class="nav-link">
-                <a href="#">About</a>
-                <a href="#">Projects</a>
-                <a href="#">Experience</a>
-                <a href="#">Contact</a>
-            </div>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
+    
+    
+    <section id="about">
+        <div class="hero-container">
+            <img src="/img/Snapchat-1638545848(1).jpg" alt="My Portrait">
+            <div class="intro">
+                <h1>Hi! I'm Ava</h1>
+                <h2>Entry Level Web Developer</h2>
+                <p>I am an entry level web developer, with a focus on front end, but experience with fullstack development. 
+                    I do my best to make interesting and engaging web pages that are fun
+                    to look at and interact with, while not being cluttered or excessive, 
+                    and also keeping it as easy to use as I can. I enjoy working with
+                    HTML, CSS, and JavaScript, prefering that work over anything backend.</p>
+            </div>
+        </div>
+        <div class="github-button">
+            <a href="https://github.com/AvaTuttle?tab=repositories" class="btn">GitHub</a>
+        </div>
+    </section>
+    
 
-    <main>
-        <h1>Title</h1>
-        <h2>Subtitle</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, harum non 
-            beatae numquam quasi esse perspiciatis praesentium quos!</p>
-        <label class="text-label">Skills/Technology</label>
-    </main>
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">Django</span>
+            <span class="skill">React</span>
+            <span class="skill">Flask</span>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Online store</h3>
+                <a href="https://github.com/AvaTuttle/online-store">Code</a>
+                <p>A class project using React to make an e-commerce store, this project was to design an 
+                    online grocery store
+                </p>
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>React</span>
+            </div>
+        </div>
+        <div class="project-card">
+            <h3>Pet Salon</h3>
+            <a href="https://github.com/AvaTuttle/pet-salon">Code</a>
+            <p>A class project using HTML, CSS, and JavaScript to make an interactive front end side of 
+                a pet salon website
+            <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>React</span>
+        </div>
+        
+    </section>
+
+    <section id="experience">
+        <h2>Experiences and Education</h2>
+        <div class="experience-container">
+            <div class="experience-card">
+                <h3>San Diego Global Knowledge University</h3>
+                <p>Web development</p>
+                <div class="tags">
+                    <span>09/24-04/25</span>
+                    <span>Student</span>
+                    <p>Studied web development working primarily with Django, React, and Flask.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Subject" required>
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send Email</button>
+            <button type="reset">Reset</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Ava Tuttle</p>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
 </html>
